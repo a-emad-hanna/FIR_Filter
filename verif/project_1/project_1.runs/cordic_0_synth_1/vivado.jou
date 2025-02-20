@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Tue Feb 18 16:08:29 2025
+# Process ID: 15928
+# Current directory: D:/Digital IC/FPGA/fir_filter/verif/project_1/project_1.runs/cordic_0_synth_1
+# Command line: vivado.exe -log cordic_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source cordic_0.tcl
+# Log file: D:/Digital IC/FPGA/fir_filter/verif/project_1/project_1.runs/cordic_0_synth_1/cordic_0.vds
+# Journal file: D:/Digital IC/FPGA/fir_filter/verif/project_1/project_1.runs/cordic_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source cordic_0.tcl -notrace

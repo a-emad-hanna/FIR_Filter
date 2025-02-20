@@ -1,0 +1,46 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Wed Feb 19 21:42:36 2025
+| Host         : DESKTOP-GJ26ENE running 64-bit major release  (build 9200)
+| Command      : report_methodology -name ultrafast_methodology_1 -file {D:/Digital IC/FPGA/fir_filter/syn/methodology_report.txt} -checks {PDRC-204 PDRC-190 TIMING-43 TIMING-42 TIMING-41 TIMING-40 TIMING-39 TIMING-38 TIMING-37 TIMING-36 TIMING-35 TIMING-34 TIMING-33 TIMING-32 TIMING-31 TIMING-30 TIMING-29 TIMING-28 TIMING-27 TIMING-26 TIMING-25 TIMING-24 TIMING-23 TIMING-22 TIMING-21 TIMING-20 TIMING-19 TIMING-18 TIMING-17 TIMING-16 TIMING-15 TIMING-14 TIMING-13 TIMING-12 TIMING-11 TIMING-10 TIMING-9 TIMING-8 TIMING-7 TIMING-6 TIMING-5 TIMING-4 TIMING-3 TIMING-2 TIMING-1 XDCV-2 XDCV-1 XDCH-2 XDCH-1 XDCC-8 XDCC-7 XDCC-6 XDCC-5 XDCC-4 XDCC-3 XDCC-2 XDCC-1 XDCB-5 XDCB-4 XDCB-3 XDCB-2 XDCB-1 CLKC-54 CLKC-53 CLKC-9 CLKC-5 CLKC-38 CLKC-37 CLKC-36 CLKC-35 CLKC-4 CLKC-18 CLKC-3 CLKC-2 CLKC-1 REQP-1959 LUTAR-1 HPDR-1 DPIR-1 NTCN-1 CKLD-2 CKLD-1 SYNTH-14 SYNTH-13 SYNTH-12 SYNTH-11 SYNTH-10 SYNTH-9 SYNTH-16 SYNTH-15 SYNTH-6 SYNTH-5 SYNTH-4}
+| Design       : FIR_Filter
+| Device       : xc7s50csga324-1
+| Speed File   : -1
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: impl_1
+      Design limits: <entire design considered>
+
+            Checks: CKLD-1 CKLD-2 CLKC-1 CLKC-2 CLKC-3 CLKC-4 CLKC-5 CLKC-9 
+CLKC-18 CLKC-35 CLKC-36 CLKC-37 CLKC-38 CLKC-53 CLKC-54 DPIR-1 HPDR-1 LUTAR-1 
+NTCN-1 PDRC-190 PDRC-204 REQP-1959 SYNTH-4 SYNTH-5 SYNTH-6 SYNTH-9 SYNTH-10 
+SYNTH-11 SYNTH-12 SYNTH-13 SYNTH-14 SYNTH-15 SYNTH-16 TIMING-1 TIMING-2 TIMING-3
+TIMING-4 TIMING-5 TIMING-6 TIMING-7 TIMING-8 TIMING-9 TIMING-10 TIMING-11 
+TIMING-12 TIMING-13 TIMING-14 TIMING-15 TIMING-16 TIMING-17 TIMING-18 TIMING-19 
+TIMING-20 TIMING-21 TIMING-22 TIMING-23 TIMING-24 TIMING-25 TIMING-26 TIMING-27 
+TIMING-28 TIMING-29 TIMING-30 TIMING-31 TIMING-32 TIMING-33 TIMING-34 TIMING-35 
+TIMING-36 TIMING-37 TIMING-38 TIMING-39 TIMING-40 TIMING-41 TIMING-42 TIMING-43 
+XDCB-1 XDCB-2 XDCB-3 XDCB-4 XDCB-5 XDCC-1 XDCC-2 XDCC-3 XDCC-4 XDCC-5 XDCC-6 
+XDCC-7 XDCC-8 XDCH-1 XDCH-2 XDCV-1 XDCV-2
+             Max violations: <unlimited>
+             Violations found: 0
++------+----------+-------------+------------+
+| Rule | Severity | Description | Violations |
++------+----------+-------------+------------+
++------+----------+-------------+------------+
+
+2. REPORT DETAILS
+-----------------
+

@@ -1,0 +1,137 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:03:12 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 22804
+License: Customer
+
+Current time: 	Thu Feb 20 02:10:30 EET 2025
+Time zone: 	Eastern European Time (Africa/Cairo)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 12
+
+Screen size: 1536x864
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 68 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	E:/xilinx_vivado/Vivado/2018.2/tps/win64/jre
+Java executable location: 	E:/xilinx_vivado/Vivado/2018.2/tps/win64/jre/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	Abanoub Hanna
+User home directory: C:/Users/Abanoub Hanna
+User working directory: D:/GitHub/FIR_Filter/verif/project_1
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: E:/xilinx_vivado/Vivado
+HDI_APPROOT: E:/xilinx_vivado/Vivado/2018.2
+RDI_DATADIR: E:/xilinx_vivado/Vivado/2018.2/data
+RDI_BINDIR: E:/xilinx_vivado/Vivado/2018.2/bin
+
+Vivado preferences file location: C:/Users/Abanoub Hanna/AppData/Roaming/Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: C:/Users/Abanoub Hanna/AppData/Roaming/Xilinx/Vivado/2018.2/
+Vivado layouts directory: C:/Users/Abanoub Hanna/AppData/Roaming/Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	E:/xilinx_vivado/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	D:/GitHub/FIR_Filter/verif/project_1/vivado.log
+Vivado journal file location: 	D:/GitHub/FIR_Filter/verif/project_1/vivado.jou
+Engine tmp dir: 	D:/GitHub/FIR_Filter/verif/project_1/.Xil/Vivado-22804-DESKTOP-GJ26ENE
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: E:/xilinx_vivado/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: D:\Digital IC\Xilinx_ISE_Design_Suite_v14.7\Xilinx_ISE_Design_Suite_v14.7\ISE147_Crack/xilinx_ise.lic
+XILINX_DSP: E:/xilinx_vivado/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: E:/xilinx_vivado/Vivado/2018.2
+XILINX_SDK: E:/xilinx_vivado/SDK/2018.2
+XILINX_VIVADO: E:/xilinx_vivado/Vivado/2018.2
+XILINX_VIVADO_HLS: E:/xilinx_vivado/Vivado/2018.2
+
+
+GUI allocated memory:	210 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 570 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 67 MB (+67608kb) [00:00:05]
+// [Engine Memory]: 483 MB (+354810kb) [00:00:05]
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: D:\GitHub\FIR_Filter\verif\project_1\project_1.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/GitHub/FIR_Filter/verif/project_1/project_1.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// [Engine Memory]: 563 MB (+59073kb) [00:00:07]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 610 MB (+19672kb) [00:00:09]
+// [GUI Memory]: 80 MB (+9986kb) [00:00:10]
+// [Engine Memory]: 661 MB (+20967kb) [00:00:10]
+// Tcl Message: open_project D:/GitHub/FIR_Filter/verif/project_1/project_1.xpr 
+// Tcl Message: INFO: [Project 1-313] Project file moved from 'D:/Digital IC/FPGA/fir_filter/verif/project_1' since last save. 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/xilinx_vivado/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 678 MB. GUI used memory: 39 MB. Current time: 2/20/25 2:10:35 AM EET
+// Tcl Message: open_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 904.043 ; gain = 150.340 
+// Project name: project_1; location: D:/GitHub/FIR_Filter/verif/project_1; part: xc7vx485tffg1157-1
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 10, false); // u (O, ck)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // ad (aj, ck)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (ck):  Run Simulation : addNotify
+// TclEventType: LAUNCH_SIM
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation 
+// Tcl Message: INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/GitHub/FIR_Filter/verif/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-51] Simulation object is 'sim_1' INFO: [USF-XSim-7] Finding pre-compiled libraries... INFO: [USF-XSim-11] File 'E:/xilinx_vivado/Vivado/2018.2/data/xsim/xsim.ini' copied to run dir:'D:/GitHub/FIR_Filter/verif/project_1/project_1.sim/sim_1/behav/xsim' INFO: [SIM-utils-54] Inspecting design source files for 'FIR_Filter_tb' in fileset 'sim_1'... 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-XSim-97] Finding global include files... INFO: [USF-XSim-98] Fetching design files from 'sim_1'... INFO: [USF-XSim-2] XSim::Compile design 
+// Tcl Message: INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/GitHub/FIR_Filter/verif/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: "xvlog --incr --relax -prj FIR_Filter_tb_vlog.prj" 
+// TclEventType: LAUNCH_SIM_LOG
+// Tcl Message: run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 914.855 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'compile' step finished in '14' seconds INFO: [USF-XSim-3] XSim::Elaborate design INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/GitHub/FIR_Filter/verif/project_1/project_1.sim/sim_1/behav/xsim' 
+// Tcl Message: Vivado Simulator 2018.2 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved. Running: E:/xilinx_vivado/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 5ffa8dbea26148c9943f012e9148c430 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot FIR_Filter_tb_behav xil_defaultlib.FIR_Filter_tb xil_defaultlib.glbl -log elaborate.log  Using 2 slave threads. Starting static elaboration Completed static elaboration Starting simulation data flow analysis 
+// Tcl Message: Built simulation snapshot FIR_Filter_tb_behav 
+// Tcl Message:  ****** Webtalk v2018.2 (64-bit)   **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018   **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018     ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.  source D:/GitHub/FIR_Filter/verif/project_1/project_1.sim/sim_1/behav/xsim/xsim.dir/FIR_Filter_tb_behav/webtalk/xsim_webtalk.tcl -notrace 
+// TclEventType: LAUNCH_SIM
+// TclEventType: LOAD_FEATURE
+// Tcl Message: webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 54.355 ; gain = 1.047 INFO: [Common 17-206] Exiting Webtalk at Thu Feb 20 02:11:32 2025... 
+// Tcl Message: run_program: Time (s): cpu = 00:00:02 ; elapsed = 00:00:34 . Memory (MB): peak = 914.855 ; gain = 0.000 
+// Tcl Message: INFO: [USF-XSim-69] 'elaborate' step finished in '34' seconds INFO: [USF-XSim-4] XSim::Simulate design INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/GitHub/FIR_Filter/verif/project_1/project_1.sim/sim_1/behav/xsim' INFO: [USF-XSim-98] *** Running xsim 
+// Tcl Message:    with args "FIR_Filter_tb_behav -key {Behavioral:sim_1:Functional:FIR_Filter_tb} -tclbatch {FIR_Filter_tb.tcl} -log {simulate.log}" 
+// Tcl Message: INFO: [USF-XSim-8] Loading simulator feature 
+// Tcl Message: Vivado Simulator 2018.2 
+// Elapsed time: 68 seconds
+selectButton(RDIResource.ProgressDialog_CANCEL, "Cancel"); // a (e)
+// Tcl Message: INFO: [Common 17-41] Interrupt caught. Command should exit soon. 
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a (e)
+// 'd' command handler elapsed time: 70 seconds
+closeMainWindow("project_1 - [D:/GitHub/FIR_Filter/verif/project_1/project_1.xpr] - Vivado 2018.2"); // ck
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+selectButton("PAResourceItoN.MainWindow_BACKGROUND_TASK_RUNNING_Wait", "Wait"); // JButton (A, G)

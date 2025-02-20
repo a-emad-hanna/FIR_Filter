@@ -1,0 +1,4 @@
+NumberHits:0
+Timestamp: Tue Feb 18 14:10:21 UTC 2025
+VLNV: xilinx.com:ip:cordic:6.0
+SynthRuntime: 109
