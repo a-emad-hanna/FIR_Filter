@@ -7,9 +7,7 @@
   - Always stable.
   - No feedback → no poles.
 - For FIR systems, the filter coefficients are equal to the impulse response:
-  $$
-  y[n] = \sum_{k=0}^{M} b_k x[n-k] = \sum_{k=0}^{M} h[k] x[n-k]
-  $$
+  $$y[n] = \sum_{k=0}^{M} b_k x[n-k] = \sum_{k=0}^{M} h[k] x[n-k]$$
 - Focus on **causal, linear phase Type I FIR filter**.
 
 ### Practical Filters
@@ -28,17 +26,15 @@
 ### Specifications
 
 - Design a lowpass FIR filter with the following specifications:
-  - Passband Frequency ($ \omega_p $): $ 0.25\pi $
-  - Stopband Frequency ($ \omega_s $): $ 0.35\pi $
-  - Passband Ripple ($ A_p $): 0.1 dB
-  - Stopband Attenuation ($ A_s $): 50 dB
+  - Passband Frequency ($\omega_p$): $0.25\pi$
+  - Stopband Frequency ($ \omega_s $): $0.35\pi$
+  - Passband Ripple ($A_p$): 0.1 dB
+  - Stopband Attenuation ($A_s$): 50 dB
 
 ### Window Method
 
 - The impulse response of the ideal filter is truncated by multiplying it by a window function:
-  $$
-  h[n] = h_d[n] w[n] = \frac{\sin(\omega_c (n - \alpha))}{\pi (n - \alpha)} w[n]
-  $$
+  $$h[n] = h_d[n] w[n] = \frac{\sin(\omega_c (n - \alpha))}{\pi (n - \alpha)} w[n]$$
 
 ![Window Method](images/2.png)
 
@@ -46,55 +42,40 @@
 
 ![Hamming Window](images/3.png)
 
-- Determine $ \delta_p $ and $ \delta_s $ from $ A_p $ and $ A_s $:
-  $$
-  \delta_p = \frac{10^{\frac{A_p}{20}} - 1}{10^{\frac{A_p}{20}} + 1} = 5.756 \times 10^{-3}
-  $$
-  $$
-  \delta_s = \frac{1 + \delta_p}{10^{\frac{A_s}{20}}} = 3.18 \times 10^{-3}
-  $$
-- Determine the cutoff frequency $ \omega_c $:
-  $$
-  \omega_c = \frac{\omega_p + \omega_s}{2} = 0.3\pi
-  $$
+- Determine $\delta_p$ and $\delta_s$ from $A_p$ and $A_s$:
+  $$\delta_p = \frac{10^{\frac{A_p}{20}} - 1}{10^{\frac{A_p}{20}} + 1} = 5.756 \times 10^{-3}$$
+  $$\delta_s = \frac{1 + \delta_p}{10^{\frac{A_s}{20}}} = 3.18 \times 10^{-3}$$
+- Determine the cutoff frequency $\omega_c$:
+  $$\omega_c = \frac{\omega_p + \omega_s}{2} = 0.3\pi$$
 - Determine the design parameters:
-  $$
-  A = -20 \log_{10} \text{min}(\delta_p, \delta_s) = 49.95
-  $$
-  $$
-  \Delta \omega = \omega_s - \omega_p = 0.1\pi
-  $$
-- Choose a window with the smallest stopband attenuation greater than $ A $ → **Hamming Window**.
-- Determine $ L $:
-  $$
-  0.1 \pi = \frac{6.6 \pi}{L} \rightarrow L = 66
-  $$
+  $$A = -20 \log_{10} \text{min}(\delta_p, \delta_s) = 49.95$$
+  $$\Delta \omega = \omega_s - \omega_p = 0.1\pi$$
+- Choose a window with the smallest stopband attenuation greater than $A$ → **Hamming Window**.
+- Determine $L$:
+  $$0.1 \pi = \frac{6.6 \pi}{L} \rightarrow L = 66$$
 - Change Type II to I by increasing the length by 1:
-  $$
-  L = 66 + 1 = 67 \quad M = L - 1 = 66 \quad \alpha = M/2 = 33
-  $$
+  $$L = 66 + 1 = 67 \quad M = L - 1 = 66 \quad \alpha = M/2 = 33$$
 
 ![Hamming Window2](images/4.png)
 ![Hamming Window3](images/5.png)
 
 #### Kaiser Window
 
-- Kaiser window has a parameter $ \beta $ to control the trade-off between mainlobe width and sidelobe level.
+- Kaiser window has a parameter $\beta$ to control the trade-off between mainlobe width and sidelobe level.
 - From Kaiser's empirical formulas:
-  $$
-  \beta = \begin{cases}
-      0.1102(A - 8.7) & \text{if } A > 50 \\
-      0.5842(A - 21)^{0.4} + 0.07886(A - 21) & \text{if } 21 \leq A \leq 50 \\
-      0 & \text{if } A < 21
-  \end{cases}
-  $$
-  $$
-  \beta = 0.1102(49.95 - 8.7) = 4.528
-  $$
-  $$
-  M = \frac{A - 8}{2.285 \Delta \omega} = \frac{49.95 - 8}{2.285 \times 0.1\pi} = \frac{41.95}{0.7176} = 58.46 \approx 59
-  $$
-- Change to Type I → $ M = 60 $, $ L = 61 $, $ \alpha = 30 $.
+  
+  If $A > 50$:
+    $$\beta = 0.1102(A - 8.7)$$
+  
+  If $21 \leq A \leq 50$:
+    $$\beta = 0.5842(A - 21)^{0.4} + 0.07886(A - 21)$$
+  
+  If $A < 21$:
+  $$\beta = 0$$
+  
+  $$\beta = 0.1102(49.95 - 8.7) = 4.528$$
+  $$M = \frac{A - 8}{2.285 \Delta \omega} = \frac{49.95 - 8}{2.285 \times 0.1\pi} = \frac{41.95}{0.7176} = 58.46 \approx 59$$
+- Change to Type I → $M = 60$, $L = 61$, $\alpha = 30$.
 
 ![Kaiser Window](images/6.png)
 ![Kaiser Window2](images/7.png)
@@ -110,9 +91,7 @@
     - $W(\omega)$: The weighting function.
     - $E(\omega)$: The error function.
 - Minimize $E(\omega)$:
-    $$
-    E(\omega) = W(\omega) [A_d(\omega) - A(\omega)]
-    $$
+    $$E(\omega) = W(\omega) [A_d(\omega) - A(\omega)]$$
 - The Remez exchange algorithm is used to solve these kinds of problems.
 - The Parks-McClellan algorithm is a specific application of the Remez exchange algorithm, tailored for designing FIR filters with linear phase.
 
@@ -123,9 +102,7 @@
 ![Parks-McClellan Algorithm](images/8.png)
 
 - Obtain $M$ using Kaiser's formula:
-    $$
-    M = \frac{-20 \log_{10}(\delta_p \delta_s)^{0.5} - 13}{2.324 \Delta \omega} = 48
-    $$
+    $$M = \frac{-20 \log_{10}(\delta_p \delta_s)^{0.5} - 13}{2.324 \Delta \omega} = 48$$
 - Check if it achieves the desired specifications. If not, increase $M$ and repeat the process.
 - Using the Remez function in Python, the specifications are met, so $L = 49$ and $\alpha = 24$.
 
@@ -165,11 +142,7 @@
 - Due to the symmetry of linear phase filter coefficients ($b_k = b_{M-k}$), we can use half the number of multipliers.
 - Also, we only need to store almost half the number of coefficients.
 - For example:
-    $$
-    y[n] = b_0 x[n] + b_1 x[n-1] + b_2 x[n-2] + b_3 x[n-3] + b_4 x[n-4] \\
-    \Downarrow \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \quad \\
-    y[n] = b_0 (x[n] + x[n-4]) + b_1 (x[n-1] + x[n-3]) + b_2 x[n-2]
-    $$
+    $$y[n] = b_0 x[n] + b_1 x[n-1] + b_2 x[n-2] + b_3 x[n-3] + b_4 x[n-4] \rightarrow y[n] = b_0 (x[n] + x[n-4]) + b_1 (x[n-1] + x[n-3]) + b_2 x[n-2]$$
 
 - Direct Form
 ![Folding Direct Form](images/13.png)
@@ -188,9 +161,6 @@
 
 - Use the compiler directives to switch between the two modes.
 
-- Full code on GitHub: [\underline{link}](https://github.com/a-emad-hanna/FIR_Filter)
-![GitHub Code](images/15.png)
-
 ## Verification
 
 ### CORDIC
@@ -198,9 +168,7 @@
 - We can store sampled sin wave values in a text file and read them in the testbench or use CORDIC IP to generate the values.
 - Coordinate Rotation Digital Computer (CORDIC) uses an input phase angle to calculate the sine and cosine of the angle.
 - The output frequency is given by:
-    $$
-    F_{out} = \frac{2 \pi M F_{clk_{cordic}}}{2^{N -1}}
-    $$
+    $$F_{out} = \frac{2 \pi M F_{clk_{cordic}}}{2^{N -1}}$$
     where
     - $M$: Phase accumulator value.
     - $F_{clk_{cordic}}$: CORDIC clock frequency.
