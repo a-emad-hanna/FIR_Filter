@@ -205,31 +205,6 @@
 
 ### Synthesis
 
-- RTL compatible with both ASIC and FPGA.
-- FPGA provides dedicated DSP blocks for MAC operations.
-
-![DSP Slice](images/23.png)
-
-### Elaboration
-
-- **Fixed Coefficients**: No registers needed for coefficients.
-![Fixed Coefficients](images/19.png)
-- **Reloadable Coefficients**: Coefficients stored in flip-flops.
-![Reloadable Coefficients](images/20.png)
-
-### Synthesis Results
-
-- **Kaiser Window Filter (61 taps)**:
-  ![Kaiser Synthesis](images/21.png)
-- **Equiripple Filter (49 taps)**:
-  ![Equiripple Synthesis](images/24.png)
-
----
-
-## FPGA Implementation
-
-### Synthesis
-
 - The RTL is compatible with both ASIC and FPGA implementation flows.
 - We will use FPGA, as it typically provides dedicated DSP blocks optimized for multiply-accumulate (MAC) operations.
 
