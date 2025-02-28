@@ -27,7 +27,7 @@
 
 - Design a lowpass FIR filter with the following specifications:
   - Passband Frequency ($\omega_p$): $0.25\pi$
-  - Stopband Frequency ($ \omega_s $): $0.35\pi$
+  - Stopband Frequency ($\omega_s$): $0.35\pi$
   - Passband Ripple ($A_p$): 0.1 dB
   - Stopband Attenuation ($A_s$): 50 dB
 
